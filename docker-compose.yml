@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  database:
+    env_file: .env
+    image: gpe_database
+    ports: 
+      - "3000"
+    environment:
+      - name= environment_gpe_back
+    restart: always
+    
+  nuxtjs:
+    env_file: .env
+    image: gpe_nuxtjs
+    ports:
+    environment:
+      - name=value
+    depends_on: 
+      - database
+
+
+
+
+

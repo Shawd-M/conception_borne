@@ -1,0 +1,2 @@
+PORT=8080
+DB=mysql://root:root@localhost:3306/cooksign_api
